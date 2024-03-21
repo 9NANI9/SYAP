@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <!-- <div>
+  <section class="parallax">
+    <div class="parallax_body">
+      <div class="parallax__container _container"> </div>
+      <div class="parallax__images images-parallax">
+         <div class="image-parallax__item">
+            <div class="images-parallax__clouds"></div>
+         </div> 
+         <div class="image-parallax__item">
+          <div class="images-parallax__mountains"></div>
+       </div> 
+       <div class="image-parallax__item">
+        <div class="images-parallax__human"></div>
+     </div> 
+      </div>
+    </div>
+  </section>  
+  <section class="content">
+
+  </section>
+ </div> -->
+  <header>
+    <img src="обезьяна-removebg-preview.png" alt="Логотип" class="logo">
+    <h1>Магазин</h1>
+    <button class="cart-button" id="buybutton" type="button">Купить</button>
+  </header>
+ 
+  <div class="admin-section">
+    <h2 class="add" >Добавление товара</h2>
+    <form class="input-fields">
+      
+      <div class="box-input">
+        <input id="name" class="input" type="text" required autocomplete="off" >
+        <label >Название</label>
+      </div>
+
+      <div class="box-input">
+        <input id="price"  class="input" type="text" required autocomplete="off">
+        <label >Цена</label>
+      </div>
+
+      <fieldset>
+        <legend>Выберите валюту:</legend>
+
+        <input type="radio" id="dollar" name="currancy" value="$" checked />
+        <label for="dollar">$</label>
+        <input type="radio" id="ruble" name="currancy" value="₽" />
+        <label for="ruble">₽</label>
+        <input type="radio" id="euro" name="currancy" value="€" />
+        <label for="euro">€</label>
+      </fieldset>
+      <input id="imgLink" type="text" placeholder="Ссылка на картинку" value="https://i.pinimg.com/736x/7b/42/35/7b4235e3967c17f9540a77710538097a.jpg">
+      <div class="input-buttons">
+        <button class="inbtn" type="reset">Очистить</button>
+        <button class="inbtn" id="submit" type="button">Добавить</button>
+      </div>
+    </form>
+  </div>
+  <div class="product-section" id="products"></div>
+  <script  type="module"  src="./app.js"></script>
+</body>
+</html>
