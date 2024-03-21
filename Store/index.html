@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
  <!-- <div>
@@ -29,9 +29,10 @@
   </section>
  </div> -->
   <header>
-    <img src="обезьяна-removebg-preview.png" alt="Логотип" class="logo">
+    <img src="images/обезьяна-removebg-preview.png" alt="Логотип" class="logo">
     <h1>Магазин</h1>
-    <button class="cart-button" id="buybutton" type="button">Купить</button>
+    <!-- <button class="cart-button" id="buybutton" type="button">Купить</button> -->
+    <button class="cart-button" id="cartbutton" type="button" onclick="window.location.href='cart.html'">Корзина</button>
   </header>
  
   <div class="admin-section">
@@ -66,6 +67,7 @@
     </form>
   </div>
   <div class="product-section" id="products"></div>
-  <script  type="module"  src="./app.js"></script>
+  <script  type="module"  src="JS/app.js"></script>
+  <script type ='module'src="JS/3d.js"></script>
 </body>
 </html>
