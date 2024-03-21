@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Cart</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    
 </head>
 <body>
     <header>
-        <img src="обезьяна-removebg-preview.png" alt="Логотип" class="logo">
-        <h1>Магазин</h1>
+        <img src="images/обезьяна-removebg-preview.png" alt="Логотип" class="logo">
+        <h1>Корзина</h1>
         <button class="cart-button" onclick="window.location.href = 'index.html'">Назад</button>
       </header>
-
-    <script src="app.js"></script>
+      <div class="product-section" id="products"></div>
+      <div class="total" id="total_price">
+        <label for="price-dollar">$</label>
+        <label for="price-euro">€</label>
+        <label for="price-ruble">₽</label>
+        <button class="totalbuy">Купить</button>
+      </div>
+    <script type ='module'src="JS/cart.js"></script>
+    <script type ='module'src="JS/3d.js"></script>
 </body>
 </html>
