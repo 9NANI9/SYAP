@@ -30,5 +30,8 @@ export default class Button {
     setText(text){
       this.text = text
     }
+    setClassName(text){
+      this.text = text
+    }
 
 }

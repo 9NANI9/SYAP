@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Форма для авторизации</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="styles/style.css" type="text/css">
+	<script type ="module" src="JS/script.js"></script>
+</head>
+<body>
+<div class="dws-wrapper">
+	<div class="dws-form">
+		<!-- Вкладки на CSS -->
+		<input type="radio" id="tab-1" name="tabs" checked>
+		<label class="tab" for="tab-1" title="Вкладка 1">Авторизация</label>
+
+		<input type="radio" name="tabs" id="tab-2">
+		<label class="tab" for="tab-2" title="Вкладка 2">Регистрация</label>
+
+		<form id="form-1" class="tab-form">
+			<div class="box-input">
+				<input class="input" type="text"id="logemail" required>
+				<label>Введите E-mail</label>
+			</div>
+
+			<div class="box-input">
+				<input class="input" type="password"id="logpass" required>
+				<label>Введите пароль</label>
+			</div>
+
+			<a href="#" class="button" id="authbutton">Войти</a>
+			
+		</form>
+
+		<form id="form-2" class="tab-form">
+			<input class="input" type="email"id="regemail" placeholder="Введите E-mail адрес">
+			<input class="input" type="text"id="regname" placeholder="Введите свое имя">
+			<input class="input" type="password"id="regpass" placeholder="Введите пароль">
+			<a href="#" class="button" id="regbtn">Регистрация</a>
+		</form>
+
+	</div>
+</div>
+</body>
+</html>

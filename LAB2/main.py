@@ -5,7 +5,7 @@ from Student import Student
 from Teacher import Teacher
 
 
-person1 = Abiture("Иванов", datetime.date(2000, 5, 10), "Информатика")
+person1 = Abiture("Иванов", datetime.date(2024, 5, 10), "Информатика")
 person2 = Student("Макаров", datetime.date(2004, 5, 9), "Физика", 3)
 person3 = Teacher("Сидоров", datetime.date(1985, 3, 22), "Математика", "Профессор", 10)
 
