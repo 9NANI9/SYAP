@@ -5,6 +5,8 @@ let product = new Product()
 const massivCopy = product.get_cart()
 for (let item of massivCopy) {
   product.create(item.name, item.price, item.currancy, item.img);
+  const temp=document.querySelector(".addbutton")
+  temp.remove()
 }
 const cost=product.count_total(massivCopy)
 console.log(cost)

@@ -10,11 +10,10 @@ body{
   background-color: white;
   margin: 0;
 }
-
-
 .input-fields {
   display: flex;
   margin: 0 auto;
+  padding-top: 15;
   flex-direction: column;
   gap: 20px;
   width: 300px;
@@ -25,14 +24,17 @@ body{
 }
 .product-section {
   display: flex;
-  height: 100vh;
-  padding: 20px;
+  height: fit-content;
+  padding: 10px;
+  padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   /* justify-content: space-around; */
   align-items: center;
+  justify-content: center;
 }
+
 
 
 
@@ -43,24 +45,31 @@ body{
 
 }
 .additional-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background-color: white;
   width: 250px;
-  height: 386px;
+  height: 350px;
   transition: transform 0.2s;
   padding: 25px;
   border: 1px solid gray;
   border-radius: 10px;
   position: relative;
+  align-items: center;
 }
 
 
-
+.admin-section{
+  padding-top: 50px;
+}
 
 
 .product-image {
   height: 200px;
-  width: 150px;
+  width: 180px;
   border-radius: 10px;
+  object-fit: contain;
 }
 .addbutton{
   visibility: visible;
@@ -70,6 +79,7 @@ body{
   border-radius: 15px;
   width: 100%;
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.8s;
+  margin: 10px;
 }
 .addbutton:hover{
   background: #27ae60;
@@ -99,9 +109,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 0 20px;
   background-color: #f0f0f0;
-  height: 10px;
+  height: 60px;
+  position: relative;
+}
+.magazin {
+  position: absolute;
+  left: calc(50% - 62px);
 }
 
 .cart-button {
@@ -185,3 +200,7 @@ header {
   cursor: pointer;
   width: 150;
 } 
+
+#exitbutton{
+  background-color: red;
+}

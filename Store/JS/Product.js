@@ -1,4 +1,5 @@
 import Button from './Button.js'
+import { startRotate,stopRotate } from './3d.js'
 
 export default class Product {
 
@@ -13,7 +14,8 @@ export default class Product {
   create(name, price, currancy, img) {
     let product = document.createElement('div');
     product.className = 'product';
-    
+    product.addEventListener('mousemove',startRotate)
+    product.addEventListener('mouseout',stopRotate)
     // Создание дополнительного div
     let additionalDiv = document.createElement('div');
     additionalDiv.className = 'additional-div';
@@ -32,13 +34,13 @@ export default class Product {
     button.innerHTML = '&#10006;';
     button.className = 'delete';
     
-    // Добавление элементов в additionalDiv
+    
+    additionalDiv.appendChild(image);
     additionalDiv.appendChild(productName);
     additionalDiv.appendChild(productPrice);
-    additionalDiv.appendChild(image);
     additionalDiv.appendChild(button);
-    
-    // Добавление additionalDiv в product
+      
+   
     product.appendChild(additionalDiv);
 
     button.addEventListener('click',()=> {

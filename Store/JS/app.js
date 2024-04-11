@@ -10,7 +10,6 @@ const imgLink = document.getElementById('imgLink')
 const submit = document.getElementById('submit')
 
 
-// Находим все div элементы на странице
 const divElements = document.querySelectorAll('div');
 
 // Проходимся по каждому div элементу
